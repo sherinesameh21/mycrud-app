@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> CRUD Application</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index-style.css">
+    </head>
+    <body>
+        <h1 class="text-center text-info pt-5">CRUD Application</h1>
+        <div class="container py-5">
+
+       <div class="form-group">
+          <label class=" text-info">proudct name</label>
+          <input type="text" name="" id="proudctName" class="form-control">
+       </div>
+
+       <div class="form-group">
+        <label class=" text-info">proudct price</label>
+        <input type="text" name="" id="proudctPrice" class="form-control">
+     </div>
+
+     <div class="form-group">
+        <label class=" text-info">proudct category</label>
+        <input type="text" name="" id="proudctCat" class="form-control">
+     </div>
+
+     <div class="form-group">
+        <label class=" text-info">proudct decsription</label>
+        <textarea type="text" name="" id="proudctDec" class="form-control"> </textarea>
+     </div>
+
+     <button  id="myAddBtn" onclick="addProudct()" class=" btn btn-info"> Add proudect</button>
+     <button id="myUpadteBtn" onclick="saveUpdateProduct()" class="btn btn-warning">update Product</button>
+
+   </div>
+
+
+   <input onkeyup="searchProudct( this.value)" class=" form-control  w-50 m-auto " placeholder="search proudct">
+   
+   <div class=" container py-5">
+       <table class=" table">
+           <thead class=" text-info">
+              
+               <th> Name </th>
+               <th> Price</th>
+               <th> Category</th>
+               <th> description</th>
+               <th> Delete product</th>
+               <th> Update product</th>
+           </thead>
+           <tbody id="tBody">
+
+           </tbody>
+
+       </table>
+
+   </div>
+   
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script src="js/mine.js"></script>
+    </body>
+
+
+
+
+
+</html>
